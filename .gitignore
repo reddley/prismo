@@ -41,3 +41,6 @@ desktop.ini
 
 # Qodo / Misc
 .qodo/
+
+# Local Images
+IMGS/
