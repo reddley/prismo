@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"(no tests yet)\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier . --write"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2"
   }
 }

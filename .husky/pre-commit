@@ -1,1 +1,7 @@
-npm test
+npx --no -- lint-staged
+
+# Block files staged from IMGS/
+if git diff --cached --name-only --diff-filter=ACM | grep -qiE "^IMGS/"; then
+  echo "Error: IMGS/ files are staged. Unstage with: git restore --staged IMGS/"
+  exit 1
+fi
