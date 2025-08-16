@@ -6,3 +6,11 @@ IMGS/
 IMGS/
 *.psd
 *.tmp
+node_modules/
+.env*
+dist/
+build/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
