@@ -2,3 +2,7 @@
 IMGS/
 *.psd
 *.tmp
+.qodo/
+IMGS/
+*.psd
+*.tmp
