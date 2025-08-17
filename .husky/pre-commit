@@ -1,4 +1,16 @@
-npx --no -- lint-staged
+# --- lint runner ---
+if command -v pnpm >/dev/null 2>&1; then
+  pnpm exec lint-staged
+elif command -v yarn >/dev/null 2>&1; then
+  yarn lint-staged
+elif command -v npm >/dev/null 2>&1; then
+  npm exec --yes lint-staged
+else
+  # Fallback for odd environments: call the Windows shim via cmd.exe
+  cmd.exe /c npx lint-staged
+fi
+# --- end lint runner ---
+
 
 # Block files staged from IMGS/
 if git diff --cached --name-only --diff-filter=ACM | grep -qiE "^IMGS/"; then
