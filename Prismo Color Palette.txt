@@ -1,0 +1,11 @@
+Prismo Color Palette 
+
+In no particular order:
+
+
+Light Blue: 	#44c2c4
+Dark Blue: 	    #5680b8
+Orange:      	#f08643
+Purple:     	#927696
+Yellow:     	#fdf24f
+Melon: 	    	#ef676a
